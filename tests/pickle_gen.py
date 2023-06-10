@@ -6,5 +6,6 @@ def moo():
 	print('moo')
 
 f = open('example_pickle.pkl', 'wb')
-pickle.dump(moo, f)
+m = pickle.dumps(moo)
+f.write(m)
 f.close()
